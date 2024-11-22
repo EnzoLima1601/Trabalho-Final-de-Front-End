@@ -9,18 +9,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <nav id="menu-lateral">
+        <button class="close-btn" onclick="toggleMenu()">
+            <i class="fas fa-times"></i> <!-- Ícone de fechar -->
+        </button>
+        <ul>
+            <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+            <li><a href="#produtos"><i class="fas fa-box"></i> Produtos</a></li>
+            <li><a href="#depoimentos"><i class="fas fa-comments"></i> Depoimentos</a></li>
+            <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+        </ul>
+    </nav>
     <header>
         <div class="container">
             <h1><i class="fas fa-store"></i> Catálogo de Produtos</h1>
-            <nav>
-                <ul id="menu">
-                    <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
-                    <li><a href="#produtos"><i class="fas fa-box"></i> Produtos</a></li>
-                    <li><a href="#depoimentos"><i class="fas fa-comments"></i> Depoimentos</a></li>
-                    <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
-                </ul>
-                <div class="hamburguer" onclick="toggleMenu()">☰</div>
-            </nav>
+            <div class="nav">
+                <nav>
+                    <ul id="menu">
+                        <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+                        <li><a href="#produtos"><i class="fas fa-box"></i> Produtos</a></li>
+                        <li><a href="#depoimentos"><i class="fas fa-comments"></i> Depoimentos</a></li>
+                        <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                    </ul>
+                    <div class="hamburguer" onclick="toggleMenu()">☰</div>
+                </nav>
+            </div>
         </div>
     </header>
 
