@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Catálogo de Produtos</title>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-store"></i> Catálogo de Produtos</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+                    <li><a href="#produtos"><i class="fas fa-box"></i> Produtos</a></li>
+                    <li><a href="#depoimentos"><i class="fas fa-comments"></i> Depoimentos</a></li>
+                    <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+                <div class="hamburguer" onclick="toggleMenu()">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8');">
+        <div class="hero-content">
+            <h2>Bem-vindo ao nosso Catálogo!</h2>
+            <p>Descubra produtos incríveis para sua necessidade</p>
+            <a href="#produtos" class="cta-button">Ver Produtos <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-padding">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa História</h3>
+                    <p>Desde 2010, somos referência em produtos premium, combinando qualidade excepcional com atendimento personalizado. Nossa missão é proporcionar a melhor experiência de compra para nossos clientes.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <h4>Qualidade Premium</h4>
+                            <p>Produtos cuidadosamente selecionados</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-truck-fast"></i>
+                            <h4>Entrega Express</h4>
+                            <p>Envio em até 24 horas</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-headset"></i>
+                            <h4>Suporte 24/7</h4>
+                            <p>Atendimento personalizado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c" alt="Nossa Equipe" loading="lazy">
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>10k+</h4>
+                            <p>Clientes Satisfeitos</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>5k+</h4>
+                            <p>Produtos Vendidos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="section-padding">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="product-grid">
+                <!-- Produto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/produto1.jpg" alt="Produto 1" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn-quickview"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Relógio</h3>
+                        <p class="product-description">Relógio premium: precisão suíça, vidro de safira e pulseira em couro. Elegância e resistência incomparáveis.</p>
+                        <span class="product-price">R$ 199,90</span>
+                        <button class="btn-comprar">Comprar Agora</button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/produto2.jpg" alt="Produto 2" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn-quickview"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Headset</h3>
+                        <p class="product-description">Headset premium: som imersivo, microfone cristalino e conforto absoluto. Para quem exige qualidade.</p>
+                        <span class="product-price">R$ 299,90</span>
+                        <button class="btn-comprar">Comprar Agora</button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/produto3.jpg" alt="Produto 3" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn-quickview"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Óculo de sol</h3>
+                        <p class="product-description">Óculos de sol premium: design sofisticado, proteção UV total e conforto leve. Elegância para qualquer ocasião.</p>
+                        <span class="product-price">R$ 159,90</span>
+                        <button class="btn-comprar">Comprar Agora</button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/produto4.jpg" alt="Produto 4" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn-quickview"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Câmera vintage</h3>
+                        <p class="product-description">Câmera retrô: charme retrô com alta definição. Capture memórias com estilo clássico.</p>
+                        <span class="product-price">R$ 259,90</span>
+                        <button class="btn-comprar">Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="section-padding">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Produtos de excelente qualidade! Super recomendo!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/client1.jpg" alt="Cliente 1">
+                            <div>
+                                <h4>Maria Silva</h4>
+                                <span>Cliente Verificado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Atendimento excepcional e entrega rápida!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/client2.jpg" alt="Cliente 2">
+                            <div>
+                                <h4>João Santos</h4>
+                                <span>Cliente Verificado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-header">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" alt="Contact" class="contact-image">
+                        <h3>Vamos Conversar?</h3>
+                        <p>Estamos aqui para ajudar você em qualquer momento</p>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(11) 99999-9999</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>contato@empresa.com.br</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Rua Exemplo, 123 - São Paulo, SP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="onSubmitContactForm(event)">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i></label>
+                            <input type="text" name="Nome" placeholder="Seu Nome">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-envelope"></i></label>
+                            <input type="email" name="E-mail" placeholder="Seu E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-phone"></i></label>
+                            <input type="tel" name="Telefone" placeholder="Seu Telefone">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-comment"></i></label>
+                            <textarea name="Mensagem" placeholder="Sua Mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <!-- Container para exibir os dados salvos -->
+                    <div id="savedDataContainer" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Empresa de Produtos de Anthony Felipe Oliveira Vaz Ltda. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
