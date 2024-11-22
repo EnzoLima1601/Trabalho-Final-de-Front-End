@@ -390,41 +390,6 @@ nav a:hover {
     grid-template-columns: minmax(0, 1fr);
   }
 }
-@media (max-width: 480px) {
-  .container {
-    padding: 0 5px;
-  }
-  .hero-content {
-    padding: 0.5rem;
-  }
-  .about-content {
-    grid-template-columns: 1fr;
-  }
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .contact-info {
-    padding: 1rem;
-  }
-  .social-links {
-    flex-wrap: wrap;
-  }
-  .social-links a {
-    margin: 0 0.5rem;
-  }
-  .about-features {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  #menu {
-    display: none;
-  }
-  .hamburguer {
-    display: inline-block;
-  }
-}
 
 @media screen and (max-width: 768px){
     .about-content{
@@ -459,6 +424,42 @@ nav a:hover {
     .about-features {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 5px;
+  }
+  .hero-content {
+    padding: 0.5rem;
+  }
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contact-info {
+    padding: 1rem;
+  }
+  .social-links {
+    flex-wrap: wrap;
+  }
+  .social-links a {
+    margin: 0 0.5rem;
+  }
+  .about-features {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  #menu {
+    display: none;
+  }
+  .hamburguer {
+    display: inline-block;
+  }
 }
 /* Estilo do menu lateral */
 #menu-lateral {
