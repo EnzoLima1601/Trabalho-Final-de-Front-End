@@ -1,7 +1,7 @@
 // Função para alternar a visibilidade do menu (abrir/fechar)
 function toggleMenu() {
     // Adiciona ou remove a classe 'active' no elemento <ul> dentro de <nav>, ativando/desativando o menu
-    document.querySelector('nav ul').classList.toggle('active');
+    document.querySelector('#menu-lateral').classList.toggle('active');
 }
 
 // Função para lidar com o envio do formulário
